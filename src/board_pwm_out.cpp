@@ -35,7 +35,6 @@
 
 using namespace pwm_out;
 
-
 PWMCustomAvr::PWMCustomAvr(int num_outputs) :
 	I2C(DRV_PWM_CUSTOM_AVR, MODULE_NAME, I2C_BUS_NUM, I2C_DEFAULT_ADDRESS, 100000),
 	ScheduledWorkItem(MODULE_NAME, px4::wq_configurations::I2C3)
