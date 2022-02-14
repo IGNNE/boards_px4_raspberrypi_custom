@@ -45,6 +45,7 @@
 /*
  * I2C busses
  */
+#define CONFIG_I2C 1
 #define PX4_NUMBER_I2C_BUSES    3
 
 #define ADC_BATTERY_VOLTAGE_CHANNEL	0

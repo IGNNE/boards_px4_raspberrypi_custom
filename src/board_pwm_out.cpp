@@ -35,12 +35,6 @@
 
 using namespace pwm_out;
 
-/**
- * Name used for this "mini-driver", a bunch of PX4 stuff won't work without this
- * In theory, the top-level driver should set this, but idk either
-*/
-static constexpr char MODULE_NAME[] = "raspberry_avr_pwm";
-
 
 PWMCustomAvr::PWMCustomAvr(int num_outputs) :
 	I2C(DRV_PWM_CUSTOM_AVR, MODULE_NAME, I2C_BUS_NUM, I2C_DEFAULT_ADDRESS, 100000),

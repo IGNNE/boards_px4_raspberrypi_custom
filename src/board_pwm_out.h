@@ -37,6 +37,12 @@
 
 #include <mutex>
 
+/**
+ * Name used for this "mini-driver", a bunch of PX4 stuff won't work without this
+ * In theory, the top-level driver should set this, but idk either
+*/
+static constexpr char MODULE_NAME[] = "raspberry_avr_pwm";
+
 #include <drivers/device/i2c.h>
 #include <px4_platform_common/i2c_spi_buses.h>
 #include <px4_platform/pwm_out_base.h>
